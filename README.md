@@ -311,10 +311,6 @@ Migrations and the recall fixtures are bundled with every function (`outputFileT
 - There is no API to create a dispute: the buyer opens it in the sandbox Resolution Center, on a payment made with their PayPal wallet.
 - Pullback shows the buyer's dispute reason but does not act on it; a dispute on a recalled item is settled for the recalled amount whatever the stated reason.
 
-## Demo Video
-
-_Link added after recording._
-
 ---
 
 ## Acknowledgments
