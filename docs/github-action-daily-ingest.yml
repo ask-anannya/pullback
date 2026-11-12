@@ -1,0 +1,16 @@
+# Optional. To enable, copy this file to .github/workflows/daily-ingest.yml.
+# Daily recall check: asks the deployed app to pull the last 30 days of openFDA food recalls.
+# Repository secrets: APP_URL (e.g. https://pullback.onrender.com) and CRON_SECRET (same value as on Render).
+name: Daily recall check
+on:
+  schedule:
+    - cron: "0 13 * * *"
+  workflow_dispatch:
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run the openFDA ingest
+        run: |
+          curl --fail-with-body -sS -X POST "${{ secrets.APP_URL }}/api/ingest" \
+            -H "Authorization: Bearer ${{ secrets.CRON_SECRET }}" --max-time 300

@@ -1,0 +1,24 @@
+{
+  "id": "15-check-digit-omitted",
+  "type": "upc_match",
+  "note": "Recall omits the UPC check digit",
+  "recall": {
+    "product_description": "Squirrel Brand Town & Country Mix 16 oz can UPC 07223805251",
+    "code_info": "BEST BY 05/01/27",
+    "recalling_firm": "JOHN B SANFILIPPO & SONS INC",
+    "reason_for_recall": "Salmonella"
+  },
+  "product": {
+    "name": "Squirrel Brand Town & Country Mix 16 oz",
+    "brand": "Squirrel Brand",
+    "upc": "072238052516",
+    "sizeText": "16 oz"
+  },
+  "batches": [
+    {
+      "lotCode": "S",
+      "bestBy": "2027-05-01"
+    }
+  ],
+  "expected": "matched"
+}

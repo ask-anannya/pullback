@@ -1,0 +1,19 @@
+{
+  "id": "02-upc-no-batches",
+  "type": "upc_match",
+  "note": "UPC stored without the leading zero; no batches recorded",
+  "recall": {
+    "product_description": "Fisher Tex Mex Trail Mix 30 oz plastic jar UPC 070690275941, 6 jars per case",
+    "code_info": "BEST BY 08/06/27",
+    "recalling_firm": "JOHN B SANFILIPPO & SONS INC",
+    "reason_for_recall": "potential presence of Salmonella"
+  },
+  "product": {
+    "name": "Fisher Tex Mex Trail Mix",
+    "brand": "Fisher",
+    "upc": "70690275941",
+    "sizeText": "30 oz"
+  },
+  "batches": [],
+  "expected": "matched"
+}

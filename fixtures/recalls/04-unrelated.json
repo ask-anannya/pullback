@@ -1,0 +1,32 @@
+{
+  "kind": "unrelated",
+  "label": "Real recall unrelated to anything the store sells.",
+  "is_simulated": false,
+  "source_url": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22H-1071-2026%22",
+  "record": {
+    "status": "Terminated",
+    "city": "Boise",
+    "state": "ID",
+    "country": "United States",
+    "classification": "Class III",
+    "product_type": "Food",
+    "event_id": "98953",
+    "recalling_firm": "Albertsons Companies LLC",
+    "address_1": "250 E Park Center Blvd",
+    "address_2": "",
+    "postal_code": "83726-0020",
+    "voluntary_mandated": "Voluntary: Firm initiated",
+    "initial_firm_notification": "E-Mail",
+    "distribution_pattern": "Nationwide.",
+    "recall_number": "H-1071-2026",
+    "product_description": "UPC 29604300000 SALMON WASABI GRILLED FS COLD               This is Albertson's store-made item and sold by unit at point of sale with grocery store's scale label.",
+    "product_quantity": "2 units",
+    "reason_for_recall": "Contains statement does not declare Salmon",
+    "recall_initiation_date": "20260506",
+    "center_classification_date": "20260618",
+    "termination_date": "20260702",
+    "report_date": "20260610",
+    "code_info": "Product was labeled with a Packed On date of May 05. 26 or before.",
+    "more_code_info": ""
+  }
+}

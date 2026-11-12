@@ -1,0 +1,54 @@
+# Render Blueprint: one free web service and one free Postgres database.
+# The daily recall check runs from GitHub Actions (docs/github-action-daily-ingest.yml, copy it to .github/workflows to enable), which calls
+# POST /api/ingest with CRON_SECRET, because Render cron jobs are not on the free plan.
+databases:
+  - name: pullback-db
+    plan: free
+
+services:
+  - type: web
+    name: pullback
+    runtime: node
+    plan: free
+    buildCommand: npm ci --include=dev && npm run build
+    startCommand: npm start
+    healthCheckPath: /
+    envVars:
+      - key: NODE_VERSION
+        value: "22"
+      - key: DATABASE_URL
+        fromDatabase:
+          name: pullback-db
+          property: connectionString
+      - key: PAYPAL_BASE_URL
+        value: https://api-m.sandbox.paypal.com
+      - key: PAYPAL_CLIENT_ID
+        sync: false
+      - key: PAYPAL_CLIENT_SECRET
+        sync: false
+      - key: PAYPAL_WEBHOOK_ID
+        sync: false
+      - key: PAYPAL_SANDBOX_BUYER_EMAIL
+        sync: false
+      - key: PAYPAL_TEST_CARD_NUMBER
+        sync: false
+      - key: PAYPAL_TEST_CARD_EXPIRY
+        sync: false
+      - key: PAYPAL_TEST_CARD_CVV
+        sync: false
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: LLM_MODEL_REASONING
+        value: gemini-3.1-pro-preview
+      - key: LLM_MODEL_FAST
+        value: gemini-3.5-flash
+      - key: APP_BASE_URL
+        sync: false
+      - key: REFUND_CAP_PER_ORDER_USD
+        value: "100"
+      - key: REFUND_CAP_PER_BATCH_USD
+        value: "2000"
+      - key: DEMO_MODE
+        value: "true"
+      - key: CRON_SECRET
+        generateValue: true

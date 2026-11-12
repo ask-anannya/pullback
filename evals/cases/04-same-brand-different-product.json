@@ -1,0 +1,24 @@
+{
+  "id": "04-same-brand-different-product",
+  "type": "same_brand_different_product",
+  "note": "Same brand, different product",
+  "recall": {
+    "product_description": "Squirrel Brand Travelers Mix 16 oz can UPC 07223899166, 12 cans per case",
+    "code_info": "BEST BY 04/30/27  BEST BY 05/28/27",
+    "recalling_firm": "JOHN B SANFILIPPO & SONS INC",
+    "reason_for_recall": "potential presence of Salmonella"
+  },
+  "product": {
+    "name": "Squirrel Brand Classic Mixed Nuts 16 oz Can",
+    "brand": "Squirrel Brand",
+    "upc": null,
+    "sizeText": "16 oz"
+  },
+  "batches": [
+    {
+      "lotCode": "X",
+      "bestBy": "2027-04-30"
+    }
+  ],
+  "expected": "near_miss"
+}

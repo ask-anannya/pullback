@@ -1,0 +1,24 @@
+{
+  "id": "12-similar-name-different-brand",
+  "type": "different_brand",
+  "note": "Similar name, different brand and barcode",
+  "recall": {
+    "product_description": "Fisher Tex Mex Trail Mix 30 oz plastic jar UPC 070690275941, 6 jars per case",
+    "code_info": "BEST BY 08/06/27",
+    "recalling_firm": "JOHN B SANFILIPPO & SONS INC",
+    "reason_for_recall": "potential presence of Salmonella"
+  },
+  "product": {
+    "name": "Trailhead Pantry Tex Mex Trail Mix 30 oz",
+    "brand": "Trailhead Pantry",
+    "upc": "200000009991",
+    "sizeText": "30 oz"
+  },
+  "batches": [
+    {
+      "lotCode": "T",
+      "bestBy": "2027-08-06"
+    }
+  ],
+  "expected": "not_related"
+}

@@ -1,0 +1,54 @@
+{
+  "name": "pullback",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Recall-to-refund agent for PayPal merchants",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "tsx scripts/migrate.ts",
+    "seed": "tsx src/db/seed.ts",
+    "seed:paypal": "tsx scripts/seed-paypal-orders.ts",
+    "job:ingest": "tsx src/jobs/daily-ingest.ts",
+    "probe": "tsx scripts/probe-paypal.ts",
+    "probe:openfda": "tsx scripts/probe-openfda.ts",
+    "it:sandbox": "tsx scripts/it-sandbox.ts",
+    "test": "vitest run",
+    "smoke": "tsx scripts/smoke.ts",
+    "eval": "tsx evals/run.ts",
+    "images": "tsx scripts/generate-product-images.ts"
+  },
+  "dependencies": {
+    "@electric-sql/pglite": "^0.5.16",
+    "@google/genai": "^3.1.0",
+    "dotenv": "^18.0.10",
+    "drizzle-orm": "^0.45.4",
+    "next": "^15.5.29",
+    "postgres": "^4.1.1",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.5",
+    "@types/node": "^26.6.6",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "drizzle-kit": "^0.31.11",
+    "tailwindcss": "^4.3.5",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3",
+    "vitest": "^5.1.0"
+  },
+  "allowScripts": {
+    "esbuild@0.18.20": true,
+    "esbuild@0.25.12": true,
+    "esbuild@0.28.2": true,
+    "protobufjs@7.6.6": true
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "14-on-or-before-after",
+  "type": "date_range",
+  "note": "Store batch is after the recalled range",
+  "recall": {
+    "product_description": "Prospector Popcorn Fudge Brownie Gourmet Popcorn 1.5oz and 3.5oz",
+    "code_info": "3.5 oz. size UPC: 850073852293; all best by dates on or before July 10, 2027",
+    "recalling_firm": "Prospector Popcorn, LLC",
+    "reason_for_recall": "Inaccurately declared nutrients"
+  },
+  "product": {
+    "name": "Prospector Popcorn Fudge Brownie Gourmet Popcorn 3.5 oz",
+    "brand": "Prospector Popcorn",
+    "upc": "850073852293",
+    "sizeText": "3.5 oz"
+  },
+  "batches": [
+    {
+      "lotCode": "P2",
+      "bestBy": "2027-08-15"
+    }
+  ],
+  "expected": "near_miss"
+}

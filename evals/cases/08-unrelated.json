@@ -1,0 +1,24 @@
+{
+  "id": "08-unrelated",
+  "type": "unrelated",
+  "note": "Different everything",
+  "recall": {
+    "product_description": "UPC 29604300000 SALMON WASABI GRILLED FS COLD. Store-made item.",
+    "code_info": "Product was labeled with a Packed On date of May 05. 26 or before.",
+    "recalling_firm": "Albertsons Companies LLC",
+    "reason_for_recall": "Contains statement does not declare Salmon"
+  },
+  "product": {
+    "name": "Ridgeway Snacks Honey Roasted Cashews 12 oz",
+    "brand": "Ridgeway Snacks",
+    "upc": "200000001007",
+    "sizeText": "12 oz"
+  },
+  "batches": [
+    {
+      "lotCode": "R",
+      "bestBy": "2027-03-10"
+    }
+  ],
+  "expected": "not_related"
+}

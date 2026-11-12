@@ -1,0 +1,24 @@
+{
+  "id": "06-size-mismatch",
+  "type": "size_mismatch",
+  "note": "Same line, different package size",
+  "recall": {
+    "product_description": "Southern Style Nuts Hunter Mix 30 oz plastic jar UPC 085839916302, 4 jars per case",
+    "code_info": "BEST BY 01/29/27",
+    "recalling_firm": "JOHN B SANFILIPPO & SONS INC",
+    "reason_for_recall": "Salmonella"
+  },
+  "product": {
+    "name": "Southern Style Nuts Hunter Mix 12 oz Bag",
+    "brand": "Southern Style Nuts",
+    "upc": null,
+    "sizeText": "12 oz"
+  },
+  "batches": [
+    {
+      "lotCode": "H",
+      "bestBy": "2027-01-29"
+    }
+  ],
+  "expected": "near_miss"
+}

@@ -1,0 +1,164 @@
+@import "tailwindcss";
+
+@theme {
+  --color-accent: #0f766e;
+  --color-accent-soft: #e6f4f2;
+  --color-ink: #1c2526;
+  --color-muted: #5b6b6d;
+  --color-line: #dfe6e5;
+  --color-paper: #f7f9f8;
+  --color-urgent: #b42318;
+  --color-urgent-soft: #fdecea;
+  --color-standard: #b54708;
+  --color-standard-soft: #fef4e6;
+  --color-low: #475467;
+  --color-low-soft: #eef1f4;
+  --color-good: #067647;
+  --color-good-soft: #e7f6ec;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+html,
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+}
+
+@utility card {
+  border-radius: 0.75rem;
+  border: 1px solid var(--color-line);
+  background: white;
+  padding: 1.25rem;
+}
+
+@utility btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+}
+
+@utility btn-primary {
+  background: var(--color-accent);
+  color: white;
+  &:hover:not(:disabled) {
+    filter: brightness(1.1);
+  }
+}
+
+@utility btn-ghost {
+  border: 1px solid var(--color-line);
+  background: white;
+  color: var(--color-ink);
+  &:hover:not(:disabled) {
+    background: var(--color-paper);
+  }
+}
+
+@utility pill {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 9999px;
+  padding: 0.125rem 0.625rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+table.data {
+  width: 100%;
+  text-align: left;
+  font-size: 0.875rem;
+}
+table.data th {
+  border-bottom: 1px solid var(--color-line);
+  padding: 0.5rem 0.75rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-muted);
+}
+table.data td {
+  border-bottom: 1px solid var(--color-line);
+  padding: 0.5rem 0.75rem;
+  vertical-align: top;
+}
+
+/* Storefront (Trailhead Pantry). An original warm snack-shop palette. */
+@theme {
+  --color-cream: #fff6e8;
+  --color-cream-deep: #fbe8cc;
+  --color-tomato: #d9472b;
+  --color-tomato-deep: #b23820;
+  --color-mustard: #f2b33d;
+  --color-forest: #2e5c4f;
+  --color-cocoa: #3a2417;
+  --color-cocoa-soft: #7a5c4a;
+  --font-display: var(--font-bricolage), ui-sans-serif, system-ui, sans-serif;
+}
+
+@utility shop-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 9999px;
+  padding: 0.75rem 1.5rem;
+  font-weight: 700;
+  font-size: 0.95rem;
+  background: var(--color-tomato);
+  color: white;
+  box-shadow: 0 3px 0 var(--color-tomato-deep);
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+  cursor: pointer;
+  &:hover:not(:disabled) {
+    transform: translateY(-1px);
+  }
+  &:active:not(:disabled) {
+    transform: translateY(2px);
+    box-shadow: 0 1px 0 var(--color-tomato-deep);
+  }
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
+
+@utility shop-btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 9999px;
+  padding: 0.7rem 1.4rem;
+  font-weight: 700;
+  font-size: 0.95rem;
+  border: 2px solid var(--color-cocoa);
+  color: var(--color-cocoa);
+  background: transparent;
+  cursor: pointer;
+  &:hover {
+    background: var(--color-cocoa);
+    color: var(--color-cream);
+  }
+}
+
+@utility shop-card {
+  border-radius: 1.5rem;
+  background: white;
+  border: 2px solid var(--color-cream-deep);
+}
+
+.shop-root {
+  background: var(--color-cream);
+  color: var(--color-cocoa);
+}

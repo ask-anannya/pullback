@@ -1,0 +1,24 @@
+{
+  "id": "05-name-only-match",
+  "type": "name_only",
+  "note": "No barcode; brand, name, size and best-by all match",
+  "recall": {
+    "product_description": "Flave! TROPICAL TRAIL MIX, NET WT 8OZ (226g), shipped 12 packs per case",
+    "code_info": "Best By 4/20/17",
+    "recalling_firm": "First Source Llc",
+    "reason_for_recall": "Listeria monocytogenes"
+  },
+  "product": {
+    "name": "Flave Tropical Trail Mix 8 oz",
+    "brand": "Flave",
+    "upc": null,
+    "sizeText": "8 oz"
+  },
+  "batches": [
+    {
+      "lotCode": "T1",
+      "bestBy": "2017-04-20"
+    }
+  ],
+  "expected": "matched"
+}

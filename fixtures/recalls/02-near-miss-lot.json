@@ -1,0 +1,31 @@
+{
+  "kind": "near_miss",
+  "label": "Real recall of a product the store sells, but none of the store batches carry the recalled best-by dates.",
+  "is_simulated": false,
+  "source_url": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22H-0831-2026%22",
+  "record": {
+    "status": "Ongoing",
+    "city": "Elgin",
+    "state": "IL",
+    "country": "United States",
+    "classification": "Class I",
+    "product_type": "Food",
+    "event_id": "98919",
+    "recalling_firm": "JOHN B SANFILIPPO & SONS INC",
+    "address_1": "1703 N Randall Rd",
+    "address_2": "",
+    "postal_code": "60123-7820",
+    "voluntary_mandated": "Voluntary: Firm initiated",
+    "initial_firm_notification": "Two or more of the following: Email, Fax, Letter, Press Release, Telephone, Visit",
+    "distribution_pattern": "Nationwide",
+    "recall_number": "H-0831-2026",
+    "product_description": "Southern Style Nuts Gourmet Hunter Mix 23 oz plastic jar UPC 085839073319 and 36 oz plastic jar UPC 085839071483.  23 oz 6 jars per case case and 96 jars per display.  36 oz 6 jars per case",
+    "product_quantity": "33,176 cases and 22 displays",
+    "reason_for_recall": "potential presence of Salmonella",
+    "recall_initiation_date": "20260505",
+    "center_classification_date": "20260521",
+    "report_date": "20260527",
+    "code_info": "BEST BY 01/28/27  BEST BY 02/05/27  BEST BY 02/12/27  BEST BY 02/17/27  BEST BY 03/03/27  BEST BY 03/14/27  BEST BY 02/05/27  BEST BY 26/FEB/2027  BEST BY 13/MAR/2027  BEST BY 02/APR/2027",
+    "more_code_info": ""
+  }
+}

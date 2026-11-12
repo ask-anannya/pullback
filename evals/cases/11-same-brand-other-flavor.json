@@ -1,0 +1,24 @@
+{
+  "id": "11-same-brand-other-flavor",
+  "type": "same_brand_different_product",
+  "note": "Same brand, different flavor; trail mix wording overlaps",
+  "recall": {
+    "product_description": "Good & Gather Mexican Street Corn Trail Mix 8 oz bag UPC 085239270240",
+    "code_info": "BEST BY 23/MAR/2027 GY",
+    "recalling_firm": "JOHN B SANFILIPPO & SONS INC",
+    "reason_for_recall": "Salmonella"
+  },
+  "product": {
+    "name": "Good & Gather Cranberry Almond Trail Mix 8 oz",
+    "brand": "Good & Gather",
+    "upc": null,
+    "sizeText": "8 oz"
+  },
+  "batches": [
+    {
+      "lotCode": "G",
+      "bestBy": "2027-03-23"
+    }
+  ],
+  "expected": "near_miss"
+}

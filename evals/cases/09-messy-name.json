@@ -1,0 +1,24 @@
+{
+  "id": "09-messy-name",
+  "type": "messy_name",
+  "note": "Word order and unit differ (340 g is 12 oz)",
+  "recall": {
+    "product_description": "Meadowlark Farms Trail Mix Organic 340g bag",
+    "code_info": "Lot 24B17",
+    "recalling_firm": "Meadowlark Farms",
+    "reason_for_recall": "Undeclared peanut"
+  },
+  "product": {
+    "name": "Organic Trail Mix 12oz",
+    "brand": "Meadowlark Farms",
+    "upc": null,
+    "sizeText": "12 oz"
+  },
+  "batches": [
+    {
+      "lotCode": "24B17",
+      "bestBy": null
+    }
+  ],
+  "expected": "matched"
+}

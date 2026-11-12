@@ -1,0 +1,24 @@
+{
+  "id": "17-no-codes-high",
+  "type": "whole_product",
+  "note": "No lot or date info; brand, name and size match",
+  "recall": {
+    "product_description": "Prince ITALIAN BREAD; Sesame; NET WEIGHT 12 OZ. (340g)",
+    "code_info": "No codes",
+    "recalling_firm": "Prince Bakery Inc",
+    "reason_for_recall": "Sesame not declared"
+  },
+  "product": {
+    "name": "Prince Italian Bread 12 oz",
+    "brand": "Prince",
+    "upc": null,
+    "sizeText": "12 oz"
+  },
+  "batches": [
+    {
+      "lotCode": "PB",
+      "bestBy": "2026-12-01"
+    }
+  ],
+  "expected": "matched"
+}

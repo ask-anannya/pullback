@@ -1,0 +1,24 @@
+{
+  "id": "18-partial-name-same-brand",
+  "type": "partial_name",
+  "note": "Same brand, different chocolate (dark vs milk)",
+  "recall": {
+    "product_description": "Harbor Lane Dark Chocolate Almond Clusters 8 oz",
+    "code_info": "Lot 5521",
+    "recalling_firm": "Harbor Lane",
+    "reason_for_recall": "Undeclared milk"
+  },
+  "product": {
+    "name": "Harbor Lane Milk Chocolate Almond Clusters 8 oz",
+    "brand": "Harbor Lane",
+    "upc": null,
+    "sizeText": "8 oz"
+  },
+  "batches": [
+    {
+      "lotCode": "5521",
+      "bestBy": null
+    }
+  ],
+  "expected": "near_miss"
+}

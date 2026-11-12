@@ -1,0 +1,24 @@
+{
+  "id": "16-unrelated-same-category",
+  "type": "unrelated",
+  "note": "Brand words overlap (kettle) but different product",
+  "recall": {
+    "product_description": "Kettle brand Natural Chocolate Lovers Trail Mix UPC 8411401910",
+    "code_info": "03JUL12 through 15JUN13",
+    "recalling_firm": "Kettle Foods, Inc.",
+    "reason_for_recall": "Dried pineapple with sulfur dioxide"
+  },
+  "product": {
+    "name": "Copper Kettle Co. Kettle Corn 7 oz",
+    "brand": "Copper Kettle Co.",
+    "upc": "200000001083",
+    "sizeText": "7 oz"
+  },
+  "batches": [
+    {
+      "lotCode": "K",
+      "bestBy": "2027-02-01"
+    }
+  ],
+  "expected": "not_related"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "10-missing-barcode-lot-match",
+  "type": "missing_barcode",
+  "note": "No store barcode; lot matches",
+  "recall": {
+    "product_description": "Windy Acres FRUITY TRAIL MIX Roasted Peanuts, Pineapple, Papaya, Raisins & Almonds 7 OZ (198 G)",
+    "code_info": "Item #02016 LOT# 022916-137 EXP DATE: 11/2016",
+    "recalling_firm": "Windy Acres Candy & Nut",
+    "reason_for_recall": "Listeria monocytogenes"
+  },
+  "product": {
+    "name": "Windy Acres Fruity Trail Mix 7 oz",
+    "brand": "Windy Acres",
+    "upc": null,
+    "sizeText": "7 oz"
+  },
+  "batches": [
+    {
+      "lotCode": "022916-137",
+      "bestBy": "2016-11-15"
+    }
+  ],
+  "expected": "matched"
+}
