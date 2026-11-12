@@ -109,19 +109,6 @@ npm run it:sandbox    # real sandbox refunds, idempotent rerun, forced error (us
 
 Without a key, the two same-brand cases built for the AI step go to the review list, which never refunds.
 
-## Deploy (Render)
-
-`render.yaml` is a Render Blueprint: a free web service and a free Postgres database. Migrations run on first start.
-
-1. Render dashboard, **New > Blueprint**, pick this repository. Fill in the secret env vars it asks for (PayPal client id and secret, sandbox buyer email, test card, Gemini key). `CRON_SECRET` is generated.
-2. After the first deploy, set `APP_BASE_URL` to the service URL (for example `https://pullback.onrender.com`).
-3. Seed the Render database once from your machine, using the database's **External Database URL** with `?sslmode=require` appended:
-   `DATABASE_URL="<external url>?sslmode=require" npm run seed && DATABASE_URL="<external url>?sslmode=require" npm run seed:paypal`
-4. Optional webhook: point a PayPal sandbox webhook at `https://<your-app>.onrender.com/api/paypal/webhook` and set `PAYPAL_WEBHOOK_ID`. Refund and dispute status are also polled, so this is not required.
-5. Optional daily recall check: in GitHub, add repository secrets `APP_URL` and `CRON_SECRET` (copy it from Render). copy `docs/github-action-daily-ingest.yml` to `.github/workflows/daily-ingest.yml`; it then calls `POST /api/ingest` every day at 13:00 UTC.
-
-The free web service sleeps after 15 minutes without traffic; the first request after that takes about a minute.
-
 ## Honest limitations
 
 - PayPal **sandbox only**. The store and customers are simulated; only the hero orders that matter are real sandbox payments, and simulated orders are never sent to the refund API (they are labeled "skipped").
