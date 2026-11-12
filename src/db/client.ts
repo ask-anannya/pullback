@@ -34,7 +34,9 @@ async function init(): Promise<void> {
     const postgres = (await import("postgres")).default;
     const { drizzle } = await import("drizzle-orm/postgres-js");
     const { migrate } = await import("drizzle-orm/postgres-js/migrator");
-    const client = postgres(url!, { max: 5, onnotice: () => {} });
+    // Pooled connections (Neon "-pooler", PgBouncer) run in transaction mode: no named prepared statements.
+    const pooled = /-pooler\.|pgbouncer=true/.test(url!);
+    const client = postgres(url!, { max: 5, onnotice: () => {}, prepare: !pooled });
     const db = drizzle({ client, schema });
     await migrate(db, { migrationsFolder: MIGRATIONS });
     holder.db = db as unknown as DB;
